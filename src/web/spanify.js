@@ -11,6 +11,6 @@ function spanify(wordDiv) {
       // char = "&#x2423;"
       char = "&bbrk;"
     }
-    wordDiv.innerHTML += "<span>" + char + "</span>"
+    wordDiv.innerHTML += "<span class='untyped'>" + char + "</span>"
   })
 }
