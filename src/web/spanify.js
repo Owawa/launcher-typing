@@ -5,6 +5,7 @@ function spanify(wordDiv) {
   wordDiv.innerHTML = null;
   // change space char
   currentWord.split('').forEach( function(char) {
+    // Change original space char into visible symbol that could be intepreted as space
     if (char === ' ') {
       console.log("space char detected.");
       // char = "&#9251;"

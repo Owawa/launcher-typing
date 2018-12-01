@@ -10,7 +10,7 @@ function detectFirstKey() {
   with (document) {
     var startKey = 's';
     var firstKey = event.key;
-    if (firstKey !== undefined && firstKey == startKey) {
+    if (firstKey !== undefined && firstKey === startKey) {
       headerElems = getElementsByTagName("header");
       headerElems.item(0).innerHTML = "Start!!";
       wordDiv = getElementById("worddiv");
@@ -31,7 +31,7 @@ function analyzeKey() {
       // change the color of current char at current word
       wordDiv.children[word.idxInWord].className="typed";
       (word.idxInWord)++;
-      // if last char, start next word typing
+      // if last char in a word, start next word typing
       if (word.idxInWord === currentWord.length) {
         (word.idxInList)++;
         // if last word, finish typing
